@@ -31,8 +31,8 @@
     transition: all 1s ease-in-out;
     --animate-delay:2s;
 }
-#main > .row > :nth-child(1) {
-    height: 90vh;
+#home > .row > :nth-child(1) {
+    height: 100vh;
 }
 #intro > .row > :nth-child(1),
 #web-dev,
