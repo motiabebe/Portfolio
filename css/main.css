@@ -1,0 +1,55 @@
+/* [data-bs-theme=dark]  {
+    --bs-body-bg: #000000 !important;
+    --bs-body-color: #ffffff !important;
+    transition: all 2s ease-in-out !important;
+} */
+.bg-black {
+    background-color: #000000;
+}
+.bg-black-subtle {
+    background-color: #121212;
+}
+.img-smaller {
+    width: 70%;
+    height: auto;
+}
+.img-medium {
+    width: 80%;
+    height: auto;
+}
+.smaller {
+    font-size: 0.75rem;
+    
+}
+/* media query from small devies */
+@media (max-width: 576px) {
+    .smaller {
+        font-size: 1rem;
+    }
+}
+#intro {
+    transition: all 1s ease-in-out;
+    --animate-delay:2s;
+}
+#main > .row > :nth-child(1) {
+    height: 90vh;
+}
+#intro > .row > :nth-child(1),
+#web-dev,
+#photography, 
+#photography > .row > :nth-child(1), 
+#graphics-design > .row > :nth-child(2) {
+    height: 100vh;
+}
+
+#graphics-design > .row > :nth-child(1) {
+    background-image: url(../img/graphics_design.jpg);
+    background-size: cover;
+    background-color: #1f1f1f;
+    background-blend-mode: multiply;
+    height: 100vh;
+}
+#graphics-design-gallery > div > img:hover, #graphics-design-gallery > div > img:focus {
+    transform: scale(1.7);
+    transition: all 1s ease-in-out;
+}
