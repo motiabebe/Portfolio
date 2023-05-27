@@ -27,7 +27,7 @@ function display() {
         displayName.innerHTML += ';';
     },2500);
     setTimeout(() => {
-        displayName.innerHTML = 'variable not found';
+        displayName.innerHTML = 'undefined';
     },3000);
     setTimeout(() => {
         displayName.innerHTML = ' ';
