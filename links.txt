@@ -11,3 +11,34 @@ https://unsplash.com/photos/3S3qaNJAoUs
 https://unsplash.com/photos/QaVBOmhP__0
 https://unsplash.com/photos/4iecRkjSNyE
 https://unsplash.com/photos/nL-YPCdKKEc
+
+
+            <!-- <header>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light position-sticky position-fixed">
+                <div class="container-fluid">
+                <a href="/" class="mx-lg-5">
+                    <img src="img/logo_black.png" alt="Logo" class="img-fluid outline mx-lg-5 mx-sm-0" width="95" height="95">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                        <ul class="navbar-nav px-lg-5">
+                        <li class="nav-item">
+                            <a class="nav-link active h6 mx-lg-4" aria-current="page" href="#main">
+                                <i class="fas fa-home-alt"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active h6 mx-lg-4" aria-current="page" href="#web">
+                                <i class="fas fa-road"></i> Explore</a>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a class="nav-link h6 mx-lg-4" href="#contact">
+                                <i class="fas fa-contact-book"></i> Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header> -->

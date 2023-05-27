@@ -5,7 +5,7 @@
 } */
 html {
     scroll-behavior: smooth;
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y proximity
 }
 .bg-black {
     background-color: #000000;
@@ -35,19 +35,16 @@ html {
     transition: all 1s ease-in-out;
     --animate-delay:2s;
 }
-#home > .row > :nth-child(1), #home > .row > :nth-child(2) {
-    height: 100vh;
-}
-#intro, #main, #web, #photography, #graphics-design {
+#intro, #home, #web, #photography, #graphics-design {
     scroll-snap-align: start;
     scroll-snap-stop: normal;
 }
 #intro > .row,
+#home > .row > :nth-child(1), #home > .row > :nth-child(2),
 #web > .row ,
-#photography, 
 #photography > .row > :nth-child(1),
-/* #photography > .row > :nth-child(2),
-#graphics-design > .row > :nth-child(1), */
+/* #photography > .row > :nth-child(2), */
+/* #graphics-design > .row > :nth-child(1), */
 #graphics-design > .row > :nth-child(2) {
     height: 100vh;
 }

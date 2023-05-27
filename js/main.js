@@ -1,12 +1,10 @@
-const home = document.querySelector('#intro');
+const intro = document.querySelector('#intro');
 
 setTimeout(() => {
-    home.classList.remove('bg-black-subtle');
-    home.classList.remove('text-white');
-    home.classList.add('bg-danger');
-    
-    home.classList.add('bg-light');
-    home.classList.add('text-dark');
+    intro.classList.remove('bg-black-subtle');
+    intro.classList.remove('text-white');
+    intro.classList.add('bg-light');
+    intro.classList.add('text-dark');
 }, 4000);
 
 
@@ -29,7 +27,7 @@ function display() {
         displayName.innerHTML += ';';
     },2500);
     setTimeout(() => {
-        displayName.innerHTML = 'error, variable not found';
+        displayName.innerHTML = 'variable not found';
     },3000);
     setTimeout(() => {
         displayName.innerHTML = ' ';
@@ -84,6 +82,7 @@ function isInViewport(element) {
         rect.right <= photographySection.offsetWidth
     );
 }
+
 
 
 

@@ -12,63 +12,40 @@
 </head>
 <body>
     <section id="intro" class="container-fluid bg-black-subtle text-light">
-            <div class="row">
-                <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
-                    <p class="display-6 ">Hi, I'm</p>
-                    <p id="displayName" class="display-3"></p>
-                    <p class="h2 animate__animated animate__fadeInDown animate__delay-4s"><b>Welcome to my portfolio</b></p>
-                    <a href="#main" class="btn btn-outline-light animate__animated animate__fadeInDown animate__delay-5s text-dark">Let's beign</a>
+        <div class="row">
+            <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center px-5">
+                <p class="display-6 ">Hi, I'm</p>
+                <p id="displayName" class="display-3"></p>
+                <p class="h2 animate__animated animate__fadeInDown animate__delay-4s"><b>Welcome to my portfolio</b></p>
+                <a href="#home" class="btn btn-outline-dark mt-3 animate__animated animate__fadeInDown animate__delay-5s rounded-4">Let's beign</a>
+            </div>
+        </div>
+    </section>
+        
+    <main id="home" class="container-fluid ">
+        <div class="row">
+            <div class="col-lg-6 col-sm-12 bg-light px-5 d-flex flex-column justify-content-center">
+                <div class="text-sm-end text-lg-start">
+                    <a href="#intro" class="btn btn-outline-dark mb-5"><i class="fas fa-arrow-circle-up fa-3"></i></a>
+                </div>
+                <p class="display-6">About Me</p>
+                <p class="lead mt-5">My name is Moti Abebe. I'm a freelancer and a student currently taking Computer Science at American College of Technology. 
+                    I'm a self-taught web developer and I'm currently learning Web Technologies. 
+                <p class="lead">Aside from web development, I also dabble in graphic design, photography, music production and video editing.</p>
+                <p class="lead">I love to learn new things and I'm always looking for new opportunities to improve my skills.</p>
+                <div class="mt-3 d-sm-block d-lg-none">
+                    <a href="#programming" class="btn btn-outline-dark mb-5"><i class="fas fa-arrow-circle-down fa-3"></i></a>
                 </div>
             </div>
-        </section>
-        
-        <main id="main">
-            
-            <header>
-                <nav class="navbar navbar-expand-lg navbar-light bg-light position-sticky position-fixed">
-                <div class="container-fluid">
-                <a href="/" class="mx-lg-5">
-                    <img src="img/logo_black.png" alt="Logo" class="img-fluid outline mx-lg-5 mx-sm-0" width="95" height="95">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                        <ul class="navbar-nav px-lg-5">
-                        <li class="nav-item">
-                            <a class="nav-link active h6 mx-lg-4" aria-current="page" href="#main">
-                                <i class="fas fa-home-alt"></i> Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active h6 mx-lg-4" aria-current="page" href="#web">
-                                <i class="fas fa-road"></i> Explore</a>
-                        </li>
-        
-                        <li class="nav-item">
-                            <a class="nav-link h6 mx-lg-4" href="#contact">
-                                <i class="fas fa-contact-book"></i> Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </header>
-
-        <section id="home"  class="container-fluid bg-light">
-            <div class="row py-5">
-                <div class="col-lg-6 col-sm-12 py-5 text-center">
-                    <p class="display-6">About Me</p>
-                    <p class="lead py-5">My name is Moti Abebe. I'm a freelancer and a student currently taking Computer Science at American College of Technology. 
-                        I'm a self-taught web developer and I'm currently learning Web Technologies. 
-                    <p class="lead">Aside from web development, I also dabble in graphic design, photography, music production and video editing.</p>
-                    <p class="lead">Click the button below to see my works.</p>
-                    <a href="#web" class="btn btn-light btn-outline-dark mt-3">Explore</a>
-                </div>
-                <div class="col-lg-6 col-sm-12 py-5 px-5">
-                    <h6>Skills</h6>
+            <div id="programming" class="col-lg-6 col-sm-12 px-5 d-flex flex-column justify-content-center bg-black-subtle text-light">
+                <p class="display-6" >Programming Skills</p>
                     <p>C++</p>
                     <div class="progress">
                         <div class="progress-bar bg-dark" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+                    </div>
+                    <p>Java</p>
+                    <div class="progress">
+                        <div class="progress-bar bg-dark" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
                     </div>
                     <p>HTML</p>
                     <div class="progress">
@@ -80,7 +57,7 @@
                     </div>  
                     <p>JavaScript</p>
                     <div class="progress">
-                        <div class="progress-bar bg-dark" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                        <div class="progress-bar bg-dark" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
                     </div> 
                     <p>PHP</p>
                     <div class="progress">
@@ -89,33 +66,42 @@
                     <p>SQL</p>
                     <div class="progress">
                         <div class="progress-bar bg-dark" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-                    </div>  
+                    </div>
+                    <div class="text-lg-end text-sm-end">
+                        <a href="#web" class="btn btn-outline-light mt-5"><i class="fas fa-arrow-circle-down fa-3"></i></a>
+                    </div>
                 </div>
-                <div class="col-lg-12 text-center">
-                </div>
-            </div>
-        </section>
-    </main>    
 
-    <section id="web" class="container-fluid bg-black text-light">
-        <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-lg-12 text-center">
+            </div>
+
+    </main> 
+
+    <section id="web" class="container-fluid">
+        <div class="row bg-black text-light">
+            <div class="col-lg-12 px-5 text-center d-flex flex-column justify-content-center">
+                <div class="text-sm-center text-lg-start">
+                    <a href="#home" class="btn btn-outline-light mt-5 mb-3"><i class="fas fa-arrow-circle-up fa-3"></i></a>
+                </div>
                 <p class="display-6 animate__animated animate__fadeInDown">Web Development</p>
             </div> 
-            <div class="col-lg-6 col-sm-12 text-center">
-                <img src="img/logos/AS_logo_lg.png" alt="" class="img-fluid" width="250" height="250">
+            <div class="col-lg-6 col-sm-12 d-flex flex-column justify-content-center align-items-center">
+                <img src="img/logos/AS_logo_lg.png" alt="" class="img-fluid" width="150" height="150">
             </div>
-            <div class="col-lg-6 col-sm-12">
+            <div class="col-lg-6 col-sm-12 px-5 d-flex flex-column justify-content-center">
                 <p class="h4 mb-3">All School Ethiopia</p>
-                <p class="h6">A website that provides information about schools in Ethiopia</p>
-                <p class="small">Developed in 2016, last updated in 2022</p>
+                <p class="h6">A website that provides information about schools, colleges and universities in Ethiopia.</p>
+                <p class="small">Developed in 2016, last release April 2023</p>
                 <p class="h6">Technologies used: HTML, CSS, JavaScript, PHP, MySQL</p>
-                <a href="https://scheth.com" class="btn btn-outline-light mt-3">Visit Site</a>
-                <a href="https://instagram.com/scheth" class="btn btn-outline-light mt-3"><i class="fab fa-instagram"></i> Instagram</a>
+                <div class="">
+                    <a href="https://scheth.com" class="btn btn-outline-light mt-3">Visit Site</a>
+                    <a href="https://instagram.com/scheth" class="btn btn-outline-light mt-3"><i class="fab fa-instagram"></i> Instagram</a>
+                </div>
             </div>
-            <div class="col-lg-12 text-center mt-5 px-md-5">
+            <div class="col-lg-12 text-center mt-3 px-5 d-flex flex-column justify-content-center">
                 <p class="small">You can find more of my web development projects on <i class="fab fa-github"></i> <a href="https://github.com/motiabebe" class="link-light link-underline-opacity-0">Github</a></p>
-                <a href="#photography" class="btn btn-outline-light mt-3">Next</a>
+                <div class="text-sm-center text-lg-end">
+                    <a href="#photography" class="btn btn-outline-light mt-5"><i class="fas fa-arrow-circle-down fa-3"></i></a>
+                </div>
             </div>
         </div>
     </section>
@@ -123,6 +109,10 @@
     <section id="photography" class="container">
         <div class="row">
             <div class="col-lg-4 col-sm-12 d-flex flex-column justify-content-center align-content-center text-center animate__fadeInDown">
+                <div class="text-sm-center text-lg-start mt-3">
+                    <a href="#web" class="btn btn-outline-dark mb-5"><i class="fas fa-arrow-circle-up fa-3"></i></a>
+                    <a href="#graphics-design" class="btn btn-outline-dark mb-5"><i class="fas fa-arrow-circle-down fa-3"></i></a>
+                </div>
                 <p class="display-6">Photography</p>
                 <p class="lead">
                     I started uploading my photos on Unsplash in 2019. Amassing over 1 million views and 10 thousand downloads. 
@@ -149,11 +139,10 @@
                         <div class="col-6">
                             <img src="img/logos/beachradio.png" alt="Beachradio" class="img-fluid img-smaller">
                         </div>
-                        <div class="col-12 ">
-                            <a href="#graphics-design" class="btn btn-outline-dark mt-3 d-sm-none d-lg-block w-25">Next</a>
-                        </div>
                     </div>
-                    <p class="small mt-5 d-sm-block d-lg-none"><i class="fas fa-arrow-down fa-1x"></i> scroll down to see some of my photography</p>
+                    <div class="text-sm-center text-lg-start mt-3">
+                        <p class="small d-block d-lg-none"><i class="fas fa-arrow-down fa"></i> scroll down to see some of my photography</p>
+                    </div>
 
             </div>
             <div class="col-lg-8 col-sm-12 px-lg-5 d-flex flex-column justify-content-center align-content-center">
@@ -196,16 +185,23 @@
         </div>
     </section>
 
-    <section id="graphics-design" class="container-fluid">
+  <section id="graphics-design" class="container-fluid">
         <div class="row">
             <div class="col-lg-6 col-sm-12 text-white px-5 d-flex flex-column align-content-center justify-content-center">
+                <div class="text-sm-center text-lg-start mt-3">
+                    <a href="#photography" class="btn btn-outline-light mb-5"><i class="fas fa-arrow-circle-up fa-3"></i></a>
+                </div>
                 <h1 class="display-2 animate__animated animate__fadeInLeft">
                     <b>Graphics <br> Design</b>
                 </h1>
                 <p class="lead">I started working with photoshop around 2015. Since then i have designed logos, business cards, flyers, music covers and much more.</p>
                 <p class="small">I have designed for businesses and individuals. Aswell as for my own projects.</p>
-                <p class="small"><i class="fas fa-arrow-down fa-1x mt-5 d-sm-block d-lg-none d-md-none"></i> scroll down to see some of my work</p>
-                <a href="#contact" class="btn btn-outline-light mt-3 d-sm-none d-lg-block w-25">Next</a>
+                <div class="text-sm-center text-lg-start mt-3">
+                    <p class="small d-block d-lg-none"><i class="fas fa-arrow-down fa"></i> scroll down to see some of my work</p>
+                </div>
+                <div class="text-sm-center text-lg-start mt-3">
+                    <a href="#contact" class="btn btn-outline-light mb-5"><i class="fas fa-arrow-circle-down fa-3"></i></a>
+                </div>
             </div>
             <div class="col-lg-6 col-sm-12 px-5 d-flex flex-column justify-content-center align-content-center">
                 <p class="h4">Some of my work...</p>
@@ -264,11 +260,11 @@
             </div>
             <div class="col-lg-6">
                 <form action="" class="">
-                    <div class="mb-3">
+                    <div class="mb-2">
                         <label for="exampleFormControlInput1" class="form-label">Email address</label>
                         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your email address">
                       </div>
-                      <div class="mb-3">
+                      <div class="mb-2">
                         <label for="exampleFormControlTextarea1" class="form-label">Message</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                       </div>
@@ -319,10 +315,6 @@
             </div>
         </div>
     </footer>
-
-    
-
-
 
     <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous" defer></script>
