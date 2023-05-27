@@ -3,6 +3,10 @@
     --bs-body-color: #ffffff !important;
     transition: all 2s ease-in-out !important;
 } */
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+}
 .bg-black {
     background-color: #000000;
 }
@@ -34,8 +38,12 @@
 #home > .row > :nth-child(1) {
     height: 100vh;
 }
-#intro > .row > :nth-child(1),
-#web-dev,
+#intro, #main, #web, #photography, #graphics-design {
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+}
+#intro > .row,
+#web > .row ,
 #photography, 
 #photography > .row > :nth-child(1), 
 #graphics-design > .row > :nth-child(2) {
