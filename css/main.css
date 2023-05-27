@@ -35,7 +35,7 @@ html {
     transition: all 1s ease-in-out;
     --animate-delay:2s;
 }
-#home > .row > :nth-child(1) {
+#home > .row > :nth-child(1), #home > .row > :nth-child(2) {
     height: 100vh;
 }
 #intro, #main, #web, #photography, #graphics-design {
@@ -45,7 +45,9 @@ html {
 #intro > .row,
 #web > .row ,
 #photography, 
-#photography > .row > :nth-child(1), 
+#photography > .row > :nth-child(1),
+/* #photography > .row > :nth-child(2),
+#graphics-design > .row > :nth-child(1), */
 #graphics-design > .row > :nth-child(2) {
     height: 100vh;
 }
