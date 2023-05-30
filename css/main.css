@@ -30,6 +30,9 @@ html {
     .smaller {
         font-size: 1rem;
     }
+    #about > .lead {
+        font-size: 1.1rem;
+    }
 }
 #intro {
     transition: all 1s ease-in-out;
