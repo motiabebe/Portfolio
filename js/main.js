@@ -1,5 +1,7 @@
 const intro = document.querySelector('#intro');
+const displayName = document.querySelector('#displayName');
 
+// changing background color and text color of intro
 setTimeout(() => {
     intro.classList.remove('bg-black-subtle');
     intro.classList.remove('text-white');
@@ -7,82 +9,108 @@ setTimeout(() => {
     intro.classList.add('text-dark');
 }, 4000);
 
+displayIntro();
 
-let displayName = document.querySelector('#displayName');
-
-function display() {
+function displayIntro() {
     setTimeout(() => {
         displayName.innerHTML = '<br>';
+    },250);
+    setTimeout(() => {
+        displayName.innerHTML = 'e';
     },500);
+    setTimeout(() => { 
+        displayName.innerHTML += 'c';
+    },700);
     setTimeout(() => {
-        displayName.innerHTML = 'cout';
-    },1000);
+        displayName.innerHTML += 'h';
+    },900);
     setTimeout(() => {
-        displayName.innerHTML += '<<';
+        displayName.innerHTML += 'o';
+    },1100);
+    setTimeout(() => {
+        displayName.innerHTML += ' $';
+    },1300);
+    setTimeout(() => {
+        displayName.innerHTML += 'n';
     },1500);
     setTimeout(() => {
-        displayName.innerHTML += 'name';
-    },2000);
+        displayName.innerHTML += 'a';
+    },1700);
+    setTimeout(() => {
+        displayName.innerHTML += 'm';
+    },1900);
+    setTimeout(() => {
+        displayName.innerHTML += 'r';
+    },2100);
     setTimeout(() => {
         displayName.innerHTML += ';';
-    },2500);
+        displayName.classList.add('error-code');
+    },2300);        
     setTimeout(() => {
+        // remove error effects
+        displayName.classList.add('text-danger');
+        displayName.classList.remove('error-code');
         displayName.innerHTML = 'undefined';
-    },3000);
+    },2700);
     setTimeout(() => {
-        displayName.innerHTML = ' ';
-        displayName.style.textdecoration = 'underline';
-    },4000);
+        displayName.classList.remove('text-danger');
+        displayName.innerHTML = 'ec';
+    },3500);
     setTimeout(() => {
-        displayName.style.textdecoration = 'none';
-        displayName.innerHTML = 'M';
+        displayName.innerHTML += 'ho';
+    },3600);
+    setTimeout(() => {
+        displayName.innerHTML += ' $';
+    },3700);
+    setTimeout(() => {
+        displayName.innerHTML += 'name';
+    },3800);
+    setTimeout(() => {
+        displayName.innerHTML += ';';
+    },3900);
+    setTimeout(() => {
+        displayName.innerHTML = '';
+        displayMyName();
     },4500);
-    setTimeout(() => {
-        displayName.innerHTML = 'Mo';
-    },4800);
-    setTimeout(() => {
-        displayName.innerHTML = 'Mot';
-    },5100);
-    setTimeout(() => {
-        displayName.innerHTML = 'Moti';
-    },5400);
-    setTimeout(() => {
-        displayName.innerHTML = 'Moti A';
-    },5700);
-    setTimeout(() => {
-        displayName.innerHTML = 'Moti Ab';
-    },6000);
-    setTimeout(() => {
-        displayName.innerHTML = 'Moti Abe';
-    },6300);
-    setTimeout(() => {
-        displayName.innerHTML = 'Moti Abeb';
-    },6600);
-    setTimeout(() => {
-        displayName.innerHTML = 'Moti Abebe';
-    },6900);
-
-
-   
 }
 
-display();
+function displayMyName(interval) {
+    let myName = ['M', 'o', 't', 'i', ' A', 'b', 'e', 'b', 'e'];
 
-const photographySection = document.querySelector('#photography-images');
-const photographyImages = photographySection.querySelectorAll('img');
+    let i = 0;
+    let intervalId = setInterval(() => {
+        displayName.innerHTML += myName[i];
+        i++;
+        if (i == myName.length) {
+            clearInterval(intervalId);
+        }
+    }, 200);
+}
 
+const home = document.querySelector('#home');
+const text = home.querySelector('p');
 
 // isinviewport function
 function isInViewport(element) {
     const rect = element.getBoundingClientRect();
     return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= photographySection.offsetHeight &&
-        rect.right <= photographySection.offsetWidth
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= window.innerHeight &&
+      rect.right <= window.innerWidth
     );
-}
+  }
 
+// add animation function
+// const addAnimation = () => {
+//     if (isInViewport(home)) {
+//         console.log('in viewport');
+//         text.classList.add('animate__animated');
+//         text.classList.add('animate__hinge');
+//     } else {
+//         text.classList.remove('animate__animated');
+//         text.classList.remove('animate__hinge');
+//     }    
+// }
 
-
-
+// window.addEventListener('scroll', addAnimation);

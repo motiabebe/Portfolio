@@ -1,12 +1,12 @@
 /* [data-bs-theme=dark]  {
     --bs-body-bg: #000000 !important;
     --bs-body-color: #ffffff !important;
-    transition: all 2s ease-in-out !important;
 } */
 html {
     scroll-behavior: smooth;
-    scroll-snap-type: y proximity
+    scroll-snap-type: y proximity;
 }
+
 .bg-black {
     background-color: #000000;
 }
@@ -33,11 +33,21 @@ html {
 }
 #intro {
     transition: all 1s ease-in-out;
-    --animate-delay:2s;
+    --animate-delay:2.5s;
 }
 #intro, #home, #web, #photography, #graphics-design {
     scroll-snap-align: start;
     scroll-snap-stop: normal;
+}
+.error-code {
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-style: dotted;
+}
+#web {
+    background-image: url('https://i.stack.imgur.com/epW6M.png');
+    background-color: #1f1f1f;
+    background-blend-mode: overlay;
 }
 #intro > .row,
 #home > .row > :nth-child(1), #home > .row > :nth-child(2),
