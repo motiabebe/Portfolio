@@ -6,13 +6,17 @@ html {
     scroll-behavior: smooth;
     scroll-snap-type: y proximity;
 }
-
+/* Backgrounds */
 .bg-black {
     background-color: #000000;
 }
 .bg-black-subtle {
     background-color: #121212;
 }
+.bg-blue-gradient {
+    background: linear-gradient(90deg, #1d243e 0%, #182848 100%);
+}
+/* Images */
 .img-smaller {
     width: 70%;
     height: auto;
@@ -21,19 +25,36 @@ html {
     width: 80%;
     height: auto;
 }
-.smaller {
+.img-circle {
+    border-radius: 50%;
+}
+/* Font sizes */
+.fs-smaller {
     font-size: 0.75rem;
-    
 }
 /* media query from small devies */
 @media (max-width: 576px) {
-    .smaller {
+    .fs-smaller {
         font-size: 1rem;
     }
     #about > .lead {
         font-size: 1.1rem;
     }
+    #web-dev > .lead {
+        font-size: 1rem;
+    }
 }
+/* 100 view height */
+#intro > .row,
+#home > .row > :nth-child(1), #home > .row > :nth-child(2),
+#web > .row ,
+#photography > .row > :nth-child(1),
+/* #photography > .row > :nth-child(2), */
+/* #graphics-design > .row > :nth-child(1), */
+#graphics-design > .row > :nth-child(2) {
+    height: 100vh;
+}
+/* delay the animation */
 #intro {
     transition: all 1s ease-in-out;
     --animate-delay:2.5s;
@@ -48,20 +69,12 @@ html {
     text-decoration-style: dotted;
 }
 #web {
-    background-image: url('https://i.stack.imgur.com/epW6M.png');
+    /* ripple effects using clip-path */
+    background-image: url(../img/web.jpg);
+    background-size: cover;
     background-color: #1f1f1f;
-    background-blend-mode: overlay;
+    background-blend-mode: multiply;
 }
-#intro > .row,
-#home > .row > :nth-child(1), #home > .row > :nth-child(2),
-#web > .row ,
-#photography > .row > :nth-child(1),
-/* #photography > .row > :nth-child(2), */
-/* #graphics-design > .row > :nth-child(1), */
-#graphics-design > .row > :nth-child(2) {
-    height: 100vh;
-}
-
 #graphics-design > .row > :nth-child(1) {
     background-image: url(../img/graphics_design.jpg);
     background-size: cover;
