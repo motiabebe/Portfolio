@@ -74,7 +74,7 @@ function displayIntro() {
     },4500);
 }
 
-function displayMyName(interval) {
+function displayMyName() {
     let myName = ['M', 'o', 't', 'i', ' A', 'b', 'e', 'b', 'e'];
 
     let i = 0;
@@ -87,29 +87,30 @@ function displayMyName(interval) {
     }, 200);
 }
 
-const home = document.querySelector('#home');
-const text = home.querySelector('p');
+// const home = document.querySelector('#home');
+// const about = document.querySelector('p');
+// const skills = document.querySelector('#skills');
 
-// isinviewport function
-function isInViewport(element) {
-    const rect = element.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= window.innerHeight &&
-      rect.right <= window.innerWidth
-    );
-  }
+// // isinviewport function
+// function isInViewport(element) {
+//     const rect = element.getBoundingClientRect();
+//     return (
+//       rect.top >= 0 &&
+//       rect.left >= 0 &&
+//       rect.bottom <= window.innerHeight &&
+//       rect.right <= window.innerWidth
+//     );
+//   }
 
-// add animation function
+// // add animation function
 // const addAnimation = () => {
 //     if (isInViewport(home)) {
 //         console.log('in viewport');
-//         text.classList.add('animate__animated');
-//         text.classList.add('animate__hinge');
+//         about.classList.add('animate__animated');
+//         about.classList.add('animate__zoomIn');
 //     } else {
-//         text.classList.remove('animate__animated');
-//         text.classList.remove('animate__hinge');
+//         about.classList.remove('animate__animated');
+//         about.classList.remove('animate__zoomIn');
 //     }    
 // }
 

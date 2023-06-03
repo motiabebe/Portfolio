@@ -16,6 +16,10 @@ html {
 .bg-blue-gradient {
     background: linear-gradient(90deg, #1d243e 0%, #182848 100%);
 }
+/* Blend modes */
+.mix-blend-difference {
+    mix-blend-mode: difference;
+}
 /* Images */
 .img-smaller {
     width: 70%;
@@ -49,9 +53,9 @@ html {
 #home > .row > :nth-child(1), #home > .row > :nth-child(2),
 #web > .row ,
 #photography > .row > :nth-child(1),
-/* #photography > .row > :nth-child(2), */
-/* #graphics-design > .row > :nth-child(1), */
-#graphics-design > .row > :nth-child(2) {
+#graphics-design > .row > :nth-child(1), #graphics-design > .row > :nth-child(2),
+#video > .row > :nth-child(1), #video > .row > :nth-child(2),
+#music > .row {
     height: 100vh;
 }
 /* delay the animation */
@@ -59,7 +63,7 @@ html {
     transition: all 1s ease-in-out;
     --animate-delay:2.5s;
 }
-#intro, #home, #web, #photography, #graphics-design {
+#intro, #home, #web, #photography, #graphics-design, #video, #music {
     scroll-snap-align: start;
     scroll-snap-stop: normal;
 }
@@ -72,17 +76,28 @@ html {
     /* ripple effects using clip-path */
     background-image: url(../img/web.jpg);
     background-size: cover;
-    background-color: #1f1f1f;
     background-blend-mode: multiply;
 }
 #graphics-design > .row > :nth-child(1) {
     background-image: url(../img/graphics_design.jpg);
     background-size: cover;
-    background-color: #1f1f1f;
     background-blend-mode: multiply;
-    height: 100vh;
 }
 #graphics-design-gallery > div > img:hover, #graphics-design-gallery > div > img:focus {
     transform: scale(1.7);
     transition: all 1s ease-in-out;
 }
+#video > .row > :nth-child(2) {
+    background-image: linear-gradient(
+        -25deg,
+        transparent 75%,
+        #121212 75%
+      ),
+      linear-gradient(45deg, transparent 75%, #121212 75%),
+      linear-gradient(-135deg, transparent 75%, #121212 75%),
+      linear-gradient(135deg, transparent 75%, #121212 75%);
+    background-size: 10rem 10rem;
+    background-position: 2rem 0, 2rem 0, 0 0, 0 0;
+}
+
+
