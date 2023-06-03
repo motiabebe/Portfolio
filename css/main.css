@@ -52,7 +52,7 @@ html {
 #intro > .row,
 #home > .row > :nth-child(1), #home > .row > :nth-child(2),
 #web > .row ,
-#photography > .row > :nth-child(1),
+#photography > .row > :nth-child(1), #photography > .row > :nth-child(2)
 #graphics-design > .row > :nth-child(1), #graphics-design > .row > :nth-child(2),
 #video > .row > :nth-child(1), #video > .row > :nth-child(2),
 #music > .row {
