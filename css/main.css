@@ -56,7 +56,7 @@ html {
 #graphics-design > .row > :nth-child(1), #graphics-design > .row > :nth-child(2),
 #video > .row > :nth-child(1), #video > .row > :nth-child(2),
 #music > .row {
-    height: 100vh;
+    height: 100svh;
 }
 /* delay the animation */
 #intro {
@@ -79,7 +79,7 @@ html {
     background-blend-mode: multiply;
 }
 #graphics-design > .row > :nth-child(1) {
-    background-image: url(../img/graphics_design.jpg);
+    background-image: url(../img/graphics_design-min.jpg);
     background-size: cover;
     background-blend-mode: multiply;
 }
