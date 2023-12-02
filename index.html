@@ -16,11 +16,16 @@
     <section id="intro" class="container-fluid bg-black-subtle text-light">
         <div class="row">
             <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center px-5">
-                <p class="display-6 ">Hi, I'm</p>
-                <p id="displayName" class="display-3"></p>
-                <p class="lead animate__animated animate__fadeInDown animate__delay-3s"><b>Welcome to my portfolio</b></p>
-                <a href="#home" class="btn border-0 mt-3 animate__animated animate__fadeInDown animate__delay-3s rounded-4">
-                    Let's begin <br>
+                <div id="turningGear" class="text-center">
+                    <i class="fas fa-spinner fa-spin fa-3x mb-3"></i>
+                    <p>Setting up..</p>
+                </div>
+                
+                <p id="greetingText" class="display-6 d-none animate__animated animate__zoomIn">Hi, I'm</p>
+                <p id="nameDisplay" class="display-3"></p>
+                <p class="lead animate__animated animate__fadeInDown animate__delay-4s"><b>Welcome to my portfolio</b></p>
+                <a href="#home" class="btn border-0 mt-3 animate__animated animate__fadeInDown animate__delay-4s rounded-4">
+                    Get Started <br>
                     <i class="fas fa-angles-down"></i>
                 </a>
            </div>
@@ -31,10 +36,9 @@
         <div class="row">
             <div id="about" class="col-lg-6 col-sm-12 bg-light px-5 d-flex flex-column justify-content-center">
                 <p class="display-6 mb-4 fw-semibold">Who am I?</p>
-                <p class="lead">I am Moti Abebe, a freelancer and a student at American College of Technology, where I am currently pursuing my degree in Computer Science. I am a self-taught web developer with a passion for learning new things.</p>
-                <p class="lead">In addition to web development, I am also proficient in graphics design, photography, music production, and video editing. 
-                I am always looking for new opportunities to improve my skills and expand my knowledge.</p>
-                <p class="lead">I am excited to continue my education and grow my career in the tech industry.</p>
+                <p class="lead fw-normal">I'm Moti Abebe, a freelancer and a Computer Science student. My journey in web development is self-taught, fueled by a passion for continuous learning.</p>
+                <p class="lead fw-normal">Beyond coding, my enthusiasm for learning extends to various creative domains, including graphics design, photography, music production, and video editing. I actively seek opportunities to refine my skills and embrace new challenges. Eager to continue my educational journey, I look forward to cultivating a successful career in the dynamic tech industry.</p>
+                <p class="lead fw-normal">Eager to continue my educational journey, I look forward to cultivating a successful career in the dynamic tech industry.</p>
                 <div class="mt-5 d-md-inline d-lg-none">
                     <a href="#intro" class="btn"><i class="fas fa-arrow-circle-up fa-3"></i></a>
                     <a href="#programming" class="btn"><i class="fas fa-arrow-circle-down fa-3"></i></a>
@@ -80,43 +84,36 @@
 
     </main> 
 
-    <section id="web" class="container-fluid bg-black-subtle">
+    <section id="web" class="container-fluid">
         <div class="row text-light">
             <div id="web-dev" class="col-lg-12 px-5 d-flex flex-column justify-content-center">
                 <p class="display-6">Web Development</p>
-                <p class="lead">I've done front and back-end web development. I have proficiency in PHP, MySQL, HTML/CSS & JavaScript. I'm continually learning new things and honing my skills as web technologies are constantly changing.</p>
-                        <p class="lead fs-6 mt-lg-3 mb-4">Projects I've worked on</p>
-                        <div class="row gy-4 gy-lg-0">
-                            <div class="col-12 col-lg-4">
-                                <p class="h4 mb-3">
-                                    <img src="img/logos/AS_logo_lg.png" alt="" width="60" height="60" class="img-fluid mx-2">
-                                        All School Ethiopia</p>
-                                <p class="h6">Ethiopian Educational Institution Directory System</p>
-                                <p class="small">Developed in 2016, last release April 2022</p>
-                                <p class="small d-none d-lg-block">Tech Stack: HTML/CSS, PHP, MySQL & JavaScript</p>
-                                <div class="">
-                                    <a href="https://scheth.com" class="link-light link-underline-opacity-0">
-                                        <i class="fas fa-link"></i> Visit Site</a>
-                                    <a href="https://instagram.com/scheth" class="link-light link-underline-opacity-0 mx-3">
-                                        <i class="fab fa-instagram"></i> Instagram</a>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-4 ">
-                                <p class="h4 mb-3">
-                                    <img src="img/logos/equb-logo.png" alt="equb-logo" width="60" height="60" class="img-fluid mx-2">
-                                        Equb</p>
-                                <p class="h6">Equb brings the Ethiopian tradition of saving and borrowing to the digital world.</p>
-                                <p class="small">Developed in 2023</p>
-                                <p class="small d-none d-lg-block">Tech Stack: HTML/CSS & JavaScript</p>
-                                <div class="">
-                                    <a href="https://bit.ly/startEqub" class="link-light link-underline-opacity-0">
-                                        <i class="fas fa-link"></i> Visit Site</a>
-                                </div>
-                            </div>
-                        </div>
-                <p class="small text-center mt-5">You can find more of my web development projects on 
-                    <i class="fab fa-github"></i> <a href="https://github.com/motiabebe" target="_blank" class="link-light link-underline-opacity-0">Github</a>
-                </p>
+                <p class="lead">I've done front and back-end web development. I have proficiency in Django, PHP, SQL, HTML/CSS, and JavaScript. I'm continually learning new technologies and honing my skills as web technologies are constantly changing.</p>
+                <p class="lead fs-6 mt-lg-3 mb-4">Projects I've worked on</p>
+                <div class="row gy-4 gy-lg-0">
+                    <div class="col-12 col-lg-4">
+                        <p class="h4 mb-3">
+                            <img src="img/logos/AS_logo_lg.png" alt="" width="60" height="60" class="img-fluid mx-2">
+                            All School Ethiopia</p>
+                        <p class="h6">Ethiopian Educational Institution Directory System</p>
+                        <p class="small">Developed in 2016, last release April 2022</p>
+                        <p class="small d-none d-lg-block">Tech Stack: HTML/CSS, PHP, MySQL & JavaScript</p>
+                        <a href="https://scheth.com" class="link-light link-underline-opacity-0">
+                        <i class="fas fa-link"></i> Visit Site</a>
+                    </div>
+                    <div class="col-12 col-lg-4 ">
+                        <p class="h4 mb-3">
+                            <img src="img/logos/equb-logo.png" alt="equb-logo" width="60" height="60" class="img-fluid mx-2">
+                            Equb</p>
+                        <p class="h6">Equb brings the Ethiopian tradition of saving and borrowing to the digital world.</p>
+                        <p class="small">Developed in 2023</p>
+                        <p class="small d-none d-lg-block">Tech Stack: HTML/CSS & JavaScript</p>
+                        <a href="https://bit.ly/startEqub" class="link-light link-underline-opacity-0">
+                        <i class="fas fa-link"></i> Visit Site</a>
+                    </div>
+                </div>
+                <p class="small text-center mt-5">You can find more of my web development projects on <i class="fab fa-github"></i> <a href="https://github.com/motiabebe" target="_blank" class="link-light link-underline-opacity-0">Github</a> </p>
+                
                 <div class="mt-5 d-md-inline d-lg-none">
                     <a href="#programming" class="btn text-light"><i class="fas fa-arrow-circle-up fa-3 "></i></a>
                     <a href="#photography" class="btn text-light"><i class="fas fa-arrow-circle-down fa-3"></i></a>
@@ -125,51 +122,53 @@
         </div> 
     </section>
 
-    <section id="photography" class="container">
+    <section id="photography" class="container vh-100">
         <div class="row">
-            <div class="col-lg-4 col-sm-12 px-5 d-flex flex-column justify-content-center text-center">
+            <div class="col-12 col-lg-4 px-5 d-flex flex-column justify-content-center text-center">
                 <p class="display-6">Photography</p>
-                <p class="lead">
-                    I started uploading my photos on Unsplash in 2019. Amassing over 1 million views and 10 thousand downloads. All my photos are free to use for personal and commercial purposes. Although not required, I would appreciate it if you credit me when you use my photos.
-                </p>
-                <p class="small">You can find more of my photos on <i class="fab fa-unsplash"></i> <a href="https://unsplash.com/@thatboymoti" class="link-dark link-underline-opacity-0">UnSplash</a></p>
+                <p class="lead">I started uploading my photos on <span class="fw-normal">Unsplash</span> in 2019. Amassing over 2 million views and 15 thousand downloads. All my photos are free to use for personal and commercial purposes. Although not required, I would appreciate it if you credit me when you use my photos.</p>
+                <p class="small">You can find more of my photos on <a href="https://unsplash.com/@thatboymoti" target="_blank" class="link-dark link-underline-opacity-0 fw-bold"><i class="fab fa-unsplash"></i> Unsplash</a></p>
                 <div class="row mt-5">
-                        <div class="col-12">
+                    <div class="col-12">
                         <p class="lead fs-6">Featured on</p>
-                        </div>
-                        <div class="col-4">
-                            <a href="https://www.buzzfeed.com/somethinggal/youre-either-mushu-genie-or-timon-and-pumbama-3l2p34amz7" target="_blank">
-                                <img src="img/logos/buzzfeed.png" alt="Buzzfeed" class="img-fluid img-smaller">
-                            </a>
-                        </div>
-                        <div class="col-4">
-                            <a href="https://techcabal.com/2022/09/09/ethiopia-is-opening/" target="_blank">
-                                <img src="img/logos/techcabal.png" alt="Techcabal" class="img-fluid img-smaller">
-                            </a>
-                        </div>
-                        <div class="col-4">
-                            <a href="https://dashboard.hiil.org/informal-justice-in-ethiopia/how-is-the-performance-of-traditional-justice-perceived-by-the-users-of-justice/" target="_blank">
-                                <img src="img/logos/hiil.jpg" alt="Hiil" class="img-fluid img-smaller">
-                            </a>
-                        </div>
-                        <div class="col-6">
-                            <a href="https://www.nhh.no/en/research-centres/fair/news/2022/new-paper-in-journal-of-health-economics/" target="_blank">
-                                <img src="img/logos/nhh.png" alt="NHH" class="img-fluid img-smaller">
-                            </a>
-                        </div>
-                        <div class="col-6">
-                            <a href="https://mybeachradio.com/wow-drive-thru-pizza-hut-coming-to-toms-river-new-jersey/" target="_blank">
-                                <img src="img/logos/beachradio.png" alt="Beachradio" class="img-fluid img-smaller">
-                            </a>
-                        </div>
                     </div>
+                    <div class="col-4">
+                        <a href="https://www.enterprise.cam.ac.uk/case-studies/habitat-for-humanity-protecting-communities-against-flood-risk/" target="_blank">
+                            <img src="img/logos/Cambridge_Enterprise.svg" alt="Cambridge Enterprise" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="https://techcabal.com/2022/09/09/ethiopia-is-opening/" target="_blank">
+                            <img src="img/logos/techcabal.png" alt="Techcabal" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="https://dashboard.hiil.org/informal-justice-in-ethiopia/how-is-the-performance-of-traditional-justice-perceived-by-the-users-of-justice/" target="_blank">
+                            <img src="img/logos/hiil.jpg" alt="Hiil" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="https://www.buzzfeed.com/somethinggal/youre-either-mushu-genie-or-timon-and-pumbama-3l2p34amz7" target="_blank">
+                            <img src="img/logos/buzzfeed.png" alt="Buzzfeed" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="https://www.nhh.no/en/research-centres/fair/news/2022/new-paper-in-journal-of-health-economics/" target="_blank">
+                            <img src="img/logos/nhh.png" alt="NHH" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="https://mybeachradio.com/wow-drive-thru-pizza-hut-coming-to-toms-river-new-jersey/" target="_blank">
+                            <img src="img/logos/beachradio.png" alt="Beachradio" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
                     <div class="mt-5 d-md-inline d-lg-none text-start">
                         <a href="#web" class="btn"><i class="fas fa-arrow-circle-up fa-3 "></i></a>
                         <a href="#photography-images" class="btn"><i class="fas fa-arrow-circle-down fa-3"></i></a>
                     </div>
-
             </div>
-            <div id="photography-images" class="col-lg-8 col-sm-12 px-lg-5 py-5 d-flex flex-column justify-content-center align-content-center">
+            <div id="photography-images" class="col-12 col-lg-8 px-lg-5 py-5 d-flex flex-column justify-content-center align-content-center">
                 <p class="lead text-center mt-5 d-sm-block d-lg-none">Here are some of my photography</p>
                 <div class="row row-cols-3 shadow-lg py-lg-5 text-center mt-5">
                     <div class="col-lg-3 py-2 col-sm-6">
@@ -196,11 +195,11 @@
                         <img src="img/photography/moti-abebe-8gA-5zooZ3A-unsplash.jpg" alt="Photography" class="img-fluid" loading="lazy">
                         <p class="mt-2 fs-smaller"><i class="fas fa-location-dot"></i> Friendship Park 2</p>
                     </div>
-                    <div class="col-lg-3 py-2 col-sm-6 d-none d-lg-block">
+                    <div class="col-lg-3 py-2 col-sm-6">
                         <img src="img/photography/moti-abebe-QaVBOmhP__0-unsplash.jpg" alt="Photography" class="img-fluid" loading="lazy">
                         <p class="mt-2 fs-smaller"><i class="fas fa-location-dot"></i> Piyassa</p>
                     </div>
-                    <div class="col-lg-3 py-2 col-sm-6 d-none d-lg-block">
+                    <div class="col-lg-3 py-2 col-sm-6">
                         <img src="img/photography/moti-abebe-RK5PTApndaM-unsplash.jpg" alt="Photography" class="img-fluid" loading="lazy">
                         <p class="mt-2 fs-smaller"><i class="fas fa-location-dot"></i> Friendship Park 2</p>
                     </div>
@@ -219,7 +218,7 @@
                 <h1 class="display-2 animate__animated animate__fadeInLeft">
                     <b>Graphics <br> Design</b>
                 </h1>
-                <p class="lead">I started using Photoshop in 2015. Since then, I have designed logos, business cards, flyers, music covers, and more. My design's are simple, clean, and modern.</p>
+                <p class="lead">I have been using Photoshop since 2015 and have a background in creating logos, business cards, flyers, music covers, and more. My designs are characterized by their simplicity, cleanliness, and modern aesthetic.</p>
                 <p class="lead fs-6">I have designed for businesses and individuals. Aswell as for my own projects.</p>
                 <div class="mt-5 d-md-inline d-lg-none">
                     <a href="#photography-images" class="btn text-light"><i class="fas fa-arrow-circle-up fa-3 "></i></a>
@@ -283,8 +282,7 @@
         <div class="row">
             <div class="col-lg-6 col-sm-12 d-flex flex-column justify-content-center px-5">
                 <p class="display-6">Video Production</p>
-                <p class="lead">I started editing videos in my early teens. Since then, i have started my YouTube channel 
-                    <a href="https://youtube.com/c/KMtvEntertainment" target="_blank" class="link-underline-opacity-0 link-dark fw-normal">KMtv Entertainment</a> and aswell have edited videos for other youtube channels. I hope to expand my knowledge in Cinematography and video editing.</p>
+                <p class="lead">I have been editing videos since my early teens. I started my own YouTube channel, <a href="https://youtube.com/c/KMtvEntertainment" target="_blank" class="link-underline-opacity-0 link-dark fw-normal">KMtv Entertainment</a>, and have also edited videos for other YouTube channels. I am passionate about video editing and I am always looking for ways to improve my skills. I am particularly interested in learning more about cinematography and I am always looking for new challenges to take on. </p>
                 <div class="text-start mt-5 d-md-inline d-lg-none">
                     <a href="#graphics-design-" class="btn"><i class="fas fa-arrow-circle-up fa-3 "></i></a>
                     <a href="#video-gallery" class="btn"><i class="fas fa-arrow-circle-down fa-3"></i></a>
@@ -315,9 +313,9 @@
 
     <section id="music" class="container-fluid">
         <div class="row">
-            <div class="col-lg-12 d-flex flex-column justify-content-center px-5 text-center bg-black-subtle text-light">
+            <div class="col-lg-12 d-flex flex-column justify-content-center px-5 text-center text-light">
                 <p class="display-6">Music Production</p>
-                <p class="lead">Making music is one of my favorite hobbies. I have produced music for various artists and have released my own music aswell.</p>
+                <p class="lead">Music has always been a passion of mine, and I've found immense joy in producing tracks for both myself and other artists. I've had the privilege of collaborating with various artists and contributing to their projects, while also releasing my own music under my name. The process of creating music is an exhilarating journey of self-expression, and I'm constantly seeking new avenues to expand my musical horizons.</p>
                 <div class="">
                     <a href="https://www.youtube.com/channel/UC7E-O7dSrKBlcylm4oYQF4A" target="_blank" class="btn text-light">
                         <i class="fab fa-youtube fa-2x"></i>
@@ -341,8 +339,7 @@
             <div class="col-lg-6 col-sm-12 py-5">
                 <p class="h4"><b>Moti Abebe</b></p>
                 <p class="lead">Freelancer</p>
-                <p class="small">I am a freelancer that dabbles in various fields, where technology helps me to express my creativity.
-                    <br>currently studying computer science at American College of Technology.</p>
+                <p class="small">Technology serves as a canvas for my creativity, enabling me to explore a diverse range of freelance endeavors.</p>
                 </div>
             <div class="col-lg-6 col-sm-12 py-5">
                 <p class="h4"><b>Let me know what you think</b></p>
@@ -368,7 +365,7 @@
             </div>
             <hr>
             <div class="col-lg-12 py-2">
-                <p class="text-center small">© 2023 - Designed and developed by Moti Abebe</p>
+                <p class="text-center small">© 2024 - Designed and developed by Moti Abebe</p>
             </div>
         </div>
     </footer>
